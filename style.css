@@ -1,0 +1,142 @@
+body, textarea{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    background: #F3F5FC;
+}
+p{
+    color: #495057;
+}
+h4{
+    color: #343A40;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 14px;
+}
+textarea{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+}
+.logo{
+    margin: 50px 50px;
+}
+
+/* MAIN */
+main{
+    padding-left: 200px;
+    display: flex;
+}
+.container{
+    width: 90%;
+    margin: 30px auto;
+}
+content{
+    margin-right: 50px;
+}
+.insertText, .message{
+    border: none;
+}
+::placeholder{
+    color: #0A3871;
+}
+.insertText:focus, .message:focus{
+    outline: none;
+}
+.information:before{
+    content: url(img/icon-info.svg);
+    margin-right: 5px;
+}
+.btn-version1, .btn-version2{
+    cursor: pointer;
+    width: 300px;
+    border-radius: 18px;
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: 1px solid #0A3871;
+}
+.btn-version1{
+    background-color: #0A3871;
+    color: white;
+}
+.btn-version2{
+    background-color: #D8DFE8;
+}
+
+/* ASIDE */
+.column{
+    background-color: white;
+    border-radius: 32px;
+    width: 400px;
+    margin-top: -100px;
+    padding: 50px 0px 30px 0px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.columnInfo{
+    padding: 50px;
+    text-align: center;
+}
+.drawing{
+    margin-bottom: 50px;
+}
+.button-copiar{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background: #0A3871;
+    padding: 30px 0px;
+}
+.footerText{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(255,255,255,0.6);
+}
+.message{
+    background: white;
+    background-image: url("img/dibujo.svg");
+    background-repeat: no-repeat;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+    .drawing{
+        visibility: hidden;
+        display: none;
+    }
+    main{
+        padding-left: 0px;
+        display: block;
+    }
+    .logo{
+        margin: 20px 20px;
+    }
+    .column{
+        padding: 0px 0px;
+        margin-top: 0px;
+    }
+    content{
+        margin-right: 0px;
+    }
+    .column{
+        width: 100%;
+    }
+    .columnInfo{
+        padding: 30px;
+        margin-top: 20px;
+    }
+    .btn-version1, .btn-version2{
+        width: 49.5%;
+    }
+}
+@media screen and (max-width: 480px){
+    .btn-version1, .btn-version2{
+        width: 100%;
+    }
+}
